@@ -1,2 +1,2 @@
- ill keep it moving > 0-iam_betty
-echo ill keep it moving
+#!/bin/bash
+su betty

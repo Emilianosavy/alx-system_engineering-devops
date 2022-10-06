@@ -1,1 +1,1 @@
-Task 0.Where am I?
+This repository will be describing what each script is doing
