@@ -1,4 +1,3 @@
 #!/bin/bash
-mv [[:upper:]]* /tmp/u >> 100-lets_move
-echo mv README.md /tmp/u README.md /tmp/u
-mv [[:upper:]]* /tmp/u >> 100-lets_move
+mv [[:upper:]]* /tmp/u
+
