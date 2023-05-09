@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script fixes a nginx server
+cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx restart
