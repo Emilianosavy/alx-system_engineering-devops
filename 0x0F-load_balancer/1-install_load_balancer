@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This is a script that installs HAProxy load balancer
+apt-get -y install --no-install-recommends software-properties-common
+apt-get -y update
+apt-get -y install haproxy
+echo "ENABLED=1" >> /etc/default/haproxy
+cp -a /etc/haproxy/haproxy.cfg{,.orig}
+echo -e '\nfrontend haproxy-main\n\tbind :80\n\tdefault_backend nginx_webservers' >> /etc/haproxy/haproxy.cfg
+echo -e '\nbackend nginx_webservers\n\tserver server1 100.25.30.148\n\tserver server2 35.175.105.87' >> /etc/haproxy/haproxy.cfg
+service haproxy restart
